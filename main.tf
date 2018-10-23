@@ -31,17 +31,11 @@ resource "aws_autoscaling_group" "web" {
    tag {
 	key = "Name"
 	value = "terraform-asg-web"
-<<<<<<< HEAD
 	propagate_at_launch = true
     }
  }
 
 data "aws_availability_zones" "all" {}
-=======
-	propagete_at_launch = true
-   }
->>>>>>> a9319e2ff3584ffc371fb3ec17a90fa74725320a
-
 resource "aws_security_group" "instance" {
   name = "terraform-instance-web"
 
