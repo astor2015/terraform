@@ -28,9 +28,9 @@ resource "aws_autoscaling_group" "web" {
    max_size = 10 
 
    tag {
-     key = "Name"
-     value = "terraform-asg-web"
-     propagete_at_launch = true
+	key = "Name"
+	value = "terraform-asg-web"
+	propagete_at_launch = true
    }
 
 resource "aws_security_group" "instance" {
